@@ -402,6 +402,20 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft' && lbIndex > 0) { lbIndex--; updateLb(); }
   if (e.key === 'ArrowRight' && lbIndex < visibleItems.length - 1) { lbIndex++; updateLb(); }
 });
+
+/* DYNAMIC CONTACT GLOW - Modification de la lueur selon le scroll */
+const contactSection = document.getElementById('contact');
+window.addEventListener('scroll', () => {
+  if (!contactSection) return;
+  const rect = contactSection.getBoundingClientRect();
+  const winH = window.innerHeight;
+  
+  if (rect.top < winH && rect.bottom > 0) {
+    let ratio = 1 - (rect.top / winH);
+    ratio = Math.min(Math.max(ratio, 0), 1);
+        contactSection.style.setProperty('--contact-glow', ratio);
+  }
+}, {passive: true});
 </script>
 </body>
 </html>
