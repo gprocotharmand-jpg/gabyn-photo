@@ -301,7 +301,6 @@
 </footer>
 
 <script>
-/* ── F1/MOTOGP PAGE LOADER SCRIPT ── */
 window.addEventListener('DOMContentLoaded', () => {
   const percentEl = document.getElementById('load-percentage');
   const barEl = document.getElementById('loader-progress-bar');
@@ -324,7 +323,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }, 30);
 });
 
-/* NAVBAR & SCROLL PROGRESS */
 const navbar = document.getElementById('navbar');
 const scrollProgress = document.getElementById('scrollProgress');
 
@@ -337,7 +335,6 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', scrollTop > 40);
 }, {passive:true});
 
-/* PARALLAX EFFECT ON HERO BACKGROUND */
 const heroBg = document.getElementById('heroBg');
 window.addEventListener('scroll', () => {
   if (heroBg) {
@@ -346,7 +343,6 @@ window.addEventListener('scroll', () => {
   }
 }, {passive: true});
 
-/* ACTIVE LINKS */
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
@@ -357,7 +353,6 @@ window.addEventListener('scroll', () => {
   });
 }, {passive:true});
 
-/* BURGER MENU */
 const burger = document.getElementById('burger');
 const overlay = document.getElementById('mobileOverlay');
 burger.addEventListener('click', () => {
@@ -369,7 +364,6 @@ document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click
   burger.classList.remove('open'); overlay.classList.remove('open'); document.body.classList.remove('no-scroll');
 }));
 
-/* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const t = document.querySelector(a.getAttribute('href'));
@@ -377,7 +371,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-/* REVEAL ANIMATION GENERALE */
 const revObs = new IntersectionObserver(entries => {
   entries.forEach(e => { 
     if(e.isIntersecting) e.target.classList.add('visible'); 
@@ -389,7 +382,6 @@ document.querySelectorAll('.reveal').forEach(el => {
   }
 });
 
-/* ── INTERSECTION OBSERVER POUR L'ENTRÉE EN DIRECT EN CASCADE DE LA GALERIE ── */
 const galleryGrid = document.querySelector('.gallery-grid');
 const items = document.querySelectorAll('.gallery-item');
 
@@ -411,7 +403,6 @@ const galleryObserver = new IntersectionObserver((entries) => {
 
 if (galleryGrid) galleryObserver.observe(galleryGrid);
 
-/* ── GALERIE FILTRAGE CHRONO-SÉQUENTIEL CORRIGÉ ── */
 const filters = document.querySelectorAll('.filter-btn');
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lightboxImg');
@@ -474,7 +465,6 @@ filters.forEach(btn => {
   });
 });
 
-/* INTERACTION SOURIS INDIVIDUELLE (PARALLAX INTERNE SUR IMAGES) */
 if (window.innerWidth > 900) {
   items.forEach(item => {
     const img = item.querySelector('img');
@@ -492,7 +482,6 @@ if (window.innerWidth > 900) {
   });
 }
 
-/* LIGHTBOX FUNCTIONS */
 function openLb(i) {
   lbIndex = i; updateLb();
   lb.classList.add('open');
@@ -529,7 +518,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight' && lbIndex < visibleItems.length - 1) { lbIndex++; updateLb(); }
 });
 
-/* 3D TILT EFFECT FOR STATS & CONTACT CARDS */
 const tiltElements = document.querySelectorAll('.tilt-element');
 if (window.innerWidth > 900) {
   tiltElements.forEach(el => {
@@ -551,7 +539,6 @@ if (window.innerWidth > 900) {
   });
 }
 
-/* DYNAMIC CONTACT GLOW */
 const contactSection = document.getElementById('contact');
 window.addEventListener('scroll', () => {
   if (!contactSection) return;
