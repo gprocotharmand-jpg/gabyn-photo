@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&family=Barlow:wght@300;400;500&family=Bebas+Neue&display=swap">  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&family=Barlow:wght@300;400;500&family=Bebas+Neue&display=swap">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" media="print" onload="this.media='all'">
 
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css" media="all">
@@ -21,7 +22,19 @@
 
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
-<body>
+<body class="loading">
+
+<div id="motogp-loader">
+  <div class="loader-content">
+    <div class="loader-brand">GABYN<span>.PH</span></div>
+    <div class="loader-counter"><span id="load-percentage">0</span>%</div>
+    <div class="loader-bar-container">
+      <div id="loader-progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+<div id="scrollProgress"></div>
 
 <nav id="navbar">
   <a href="#hero" class="logo" aria-label="Retour en haut">Gabyn<span class="logo-dot">.ph</span></a>
@@ -49,7 +62,7 @@
 
 <main>
   <section id="hero" class="hero">
-    <div class="hero-bg" style="background-image: url('img/DSC_5126.webp');" fetchpriority="high"></div>
+    <div class="hero-bg" id="heroBg" style="background-image: url('img/DSC_5126.webp');" fetchpriority="high"></div>
     <div class="hero-bg-overlay"></div>
 
     <div class="hero-content">
@@ -88,7 +101,7 @@
         <button class="filter-btn" data-filter="autres">Autres</button>
       </div>
 
-      <div class="gallery-grid reveal">
+      <div class="gallery-grid">
         <div class="gallery-item" data-category="autres"><img src="img/photo-01.webp" alt="" width="797" height="532" fetchpriority="high"><div class="gallery-overlay"></div></div>
         <div class="gallery-item" data-category="automobile"><img src="img/photo-02.webp" alt="Automobile" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
         <div class="gallery-item" data-category="autres"><img src="img/photo-03.webp" alt="Portrait" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
@@ -171,7 +184,7 @@
         <div class="gallery-item" data-category="rugby"><img src="img/photo-80.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
         <div class="gallery-item" data-category="rugby"><img src="img/photo-81.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
       </div>
-      </div>
+    </div>
   </section>
 
   <div class="lightbox" id="lightbox" role="dialog" aria-label="Aperçu de l'image">
@@ -183,7 +196,6 @@
 
   <section id="about" class="section-about">
     <div class="section-inner">
-
       <div class="section-header reveal">
         <div>
           <p class="section-label">Qui suis-je</p>
@@ -192,11 +204,10 @@
       </div>
 
       <div class="about-layout">
-
         <div class="about-stats reveal">
-          <div class="about-stat glass"><span class="stat-val">18</span><span class="stat-lbl">ans</span></div>
-          <div class="about-stat glass"><span class="stat-val">1A</span><span class="stat-lbl">BUT MMI</span></div>
-          <div class="about-stat glass"><span class="stat-val">TRY</span><span class="stat-lbl">Troyes</span></div>
+          <div class="about-stat glass tilt-element"><span class="stat-val">18</span><span class="stat-lbl">ans</span></div>
+          <div class="about-stat glass tilt-element"><span class="stat-val">1A</span><span class="stat-lbl">BUT MMI</span></div>
+          <div class="about-stat glass tilt-element"><span class="stat-val">TRY</span><span class="stat-lbl">Troyes</span></div>
         </div>
 
         <div class="about-text-block reveal reveal-delay-1">
@@ -227,7 +238,6 @@
               <a href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener" class="speed-link">LinkedIn</a>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
@@ -235,7 +245,6 @@
 
   <section id="contact" class="section-contact">
     <div class="section-inner">
-
       <div class="section-header reveal">
         <div>
           <p class="section-label">Contact</p>
@@ -246,7 +255,7 @@
       <p class="contact-intro reveal">Un projet photo, une collaboration ou simplement envie d'échanger ? Contactez-moi directement.</p>
 
       <div class="contact-grid reveal">
-        <a class="contact-card glass" href="mailto:g.procotharmand@gmail.com">
+        <a class="contact-card glass tilt-element" href="mailto:g.procotharmand@gmail.com">
           <div class="contact-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
@@ -256,7 +265,7 @@
           </div>
         </a>
 
-        <a class="contact-card glass" href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener">
+        <a class="contact-card glass tilt-element" href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener">
           <div class="contact-card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </div>
@@ -266,16 +275,17 @@
           </div>
         </a>
 
-        <a class="contact-card glass" href="https://www.instagram.com/gabyn_procotharmand" target="_blank" rel="noopener">
-          <div class="contact-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          </div>
-          <div class="contact-card-text">
-            <span class="contact-card-label">Instagram</span>
-            <span class="contact-card-val">@gabyn_procotharmand</span>
-          </div>
-          <span class="contact-card-arrow" aria-hidden="true">→</span>
-        </a>
+        <div class="contact-card glass" style="padding: 0; overflow: hidden; min-height: 440px; border-color: var(--red-dim); display: flex; justify-content: center; align-items: center;">
+          <iframe title="Instagram"
+            src="https://www.instagram.com/p/DYg4Q1MAGXE/embed/" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            scrolling="no" 
+            allowtransparency="true"
+            style="border:none; overflow:hidden; border-radius: var(--radius-sharp); min-height: 440px;">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -291,9 +301,50 @@
 </footer>
 
 <script>
-/* NAVBAR */
+/* ── F1/MOTOGP PAGE LOADER SCRIPT ── */
+window.addEventListener('DOMContentLoaded', () => {
+  const percentEl = document.getElementById('load-percentage');
+  const barEl = document.getElementById('loader-progress-bar');
+  const loader = document.getElementById('motogp-loader');
+  
+  let count = 0;
+  const interval = setInterval(() => {
+    count += Math.floor(Math.random() * 4) + 2; 
+    if(count >= 100) {
+      count = 100;
+      clearInterval(interval);
+      
+      setTimeout(() => {
+        loader.classList.add('fade-out');
+        document.body.classList.remove('loading');
+      }, 300);
+    }
+    percentEl.textContent = count;
+    barEl.style.width = count + '%';
+  }, 30);
+});
+
+/* NAVBAR & SCROLL PROGRESS */
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40), {passive:true});
+const scrollProgress = document.getElementById('scrollProgress');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolledVal = (scrollTop / docHeight) * 100;
+  
+  if (scrollProgress) scrollProgress.style.width = scrolledVal + '%';
+  navbar.classList.toggle('scrolled', scrollTop > 40);
+}, {passive:true});
+
+/* PARALLAX EFFECT ON HERO BACKGROUND */
+const heroBg = document.getElementById('heroBg');
+window.addEventListener('scroll', () => {
+  if (heroBg) {
+    let offset = window.scrollY * 0.4;
+    heroBg.style.transform = `scale(1.05) translateY(${offset}px)`;
+  }
+}, {passive: true});
 
 /* ACTIVE LINKS */
 const navLinks = document.querySelectorAll('.nav-link');
@@ -326,13 +377,42 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-/* REVEAL ANIMATION */
-const revObs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:.1});
-document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+/* REVEAL ANIMATION GENERALE */
+const revObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { 
+    if(e.isIntersecting) e.target.classList.add('visible'); 
+  });
+}, {threshold:.1});
+document.querySelectorAll('.reveal').forEach(el => {
+  if (!el.classList.contains('gallery-grid')) {
+    revObs.observe(el);
+  }
+});
 
-/* GALERIE FILTRAGE & LIGHTBOX */
-const filters = document.querySelectorAll('.filter-btn');
+/* ── INTERSECTION OBSERVER POUR L'ENTRÉE EN DIRECT EN CASCADE DE LA GALERIE ── */
+const galleryGrid = document.querySelector('.gallery-grid');
 const items = document.querySelectorAll('.gallery-item');
+
+const galleryObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      galleryGrid.classList.add('grid-animate-in');
+      let idx = 0;
+      items.forEach(item => {
+        if (!item.classList.contains('hidden-anim') && item.style.display !== 'none') {
+          item.style.setProperty('--item-idx', idx);
+          idx++;
+        }
+      });
+      galleryObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.05 });
+
+if (galleryGrid) galleryObserver.observe(galleryGrid);
+
+/* ── GALERIE FILTRAGE CHRONO-SÉQUENTIEL CORRIGÉ ── */
+const filters = document.querySelectorAll('.filter-btn');
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lightboxImg');
 const lbClose = document.getElementById('lightboxClose');
@@ -343,19 +423,46 @@ let visibleItems = Array.from(items);
 let lbIndex = 0;
 
 function filterGallery(filterValue) {
-  items.forEach(item => {
+  let activeIndex = 0;
+  galleryGrid.classList.remove('grid-animate-in');
+  
+  items.forEach((item) => {
     const categories = item.getAttribute('data-category').split(' ');
+    
     if (categories.includes(filterValue)) {
-      item.classList.remove('hidden');
+      item.style.display = 'block';
+      item.classList.remove('hidden-anim');
+      item.style.setProperty('--item-idx', activeIndex);
+      activeIndex++;
     } else {
-      item.classList.add('hidden');
+      item.classList.add('hidden-anim');
+      setTimeout(() => {
+        if(item.classList.contains('hidden-anim')) item.style.display = 'none';
+      }, 400); 
     }
   });
-  visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden'));
+  
+  setTimeout(() => {
+    galleryGrid.classList.add('grid-animate-in');
+    visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden-anim'));
+  }, 50);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  filterGallery('cyclo-cross');
+  let activeIdx = 0;
+  items.forEach(item => {
+    const categories = item.getAttribute('data-category').split(' ');
+    if (!categories.includes('cyclo-cross')) {
+      item.classList.add('hidden-anim');
+      item.style.display = 'none';
+    } else {
+      item.style.display = 'block';
+      item.classList.remove('hidden-anim');
+      item.style.setProperty('--item-idx', activeIdx);
+      activeIdx++;
+    }
+  });
+  visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden-anim'));
 });
 
 filters.forEach(btn => {
@@ -367,6 +474,25 @@ filters.forEach(btn => {
   });
 });
 
+/* INTERACTION SOURIS INDIVIDUELLE (PARALLAX INTERNE SUR IMAGES) */
+if (window.innerWidth > 900) {
+  items.forEach(item => {
+    const img = item.querySelector('img');
+    item.addEventListener('mousemove', (e) => {
+      const rect = item.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const moveX = ((x / rect.width) - 0.5) * 16;
+      const moveY = ((y / rect.height) - 0.5) * 16;
+      img.style.transform = `scale(1.1) translate(${moveX}px, ${moveY}px)`;
+    });
+    item.addEventListener('mouseleave', () => {
+      img.style.transform = 'scale(1) translate(0, 0)';
+    });
+  });
+}
+
+/* LIGHTBOX FUNCTIONS */
 function openLb(i) {
   lbIndex = i; updateLb();
   lb.classList.add('open');
@@ -403,17 +529,38 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight' && lbIndex < visibleItems.length - 1) { lbIndex++; updateLb(); }
 });
 
-/* DYNAMIC CONTACT GLOW - Modification de la lueur selon le scroll */
+/* 3D TILT EFFECT FOR STATS & CONTACT CARDS */
+const tiltElements = document.querySelectorAll('.tilt-element');
+if (window.innerWidth > 900) {
+  tiltElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left; 
+      const y = e.clientY - rect.top; 
+      const xc = rect.width / 2;
+      const yc = rect.height / 2;
+      const angleX = (yc - y) / yc * 12;
+      const angleY = (x - xc) / xc * 12;
+      const hasSkew = el.classList.contains('about-stat') ? 'skewX(-6deg)' : '';
+      el.style.transform = `perspective(600px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.03) ${hasSkew}`;
+    });
+    el.addEventListener('mouseleave', () => {
+      const hasSkew = el.classList.contains('about-stat') ? 'skewX(-6deg)' : '';
+      el.style.transform = `perspective(600px) rotateX(0deg) rotateY(0deg) scale(1) ${hasSkew}`;
+    });
+  });
+}
+
+/* DYNAMIC CONTACT GLOW */
 const contactSection = document.getElementById('contact');
 window.addEventListener('scroll', () => {
   if (!contactSection) return;
   const rect = contactSection.getBoundingClientRect();
   const winH = window.innerHeight;
-  
   if (rect.top < winH && rect.bottom > 0) {
     let ratio = 1 - (rect.top / winH);
     ratio = Math.min(Math.max(ratio, 0), 1);
-        contactSection.style.setProperty('--contact-glow', ratio);
+    contactSection.style.setProperty('--contact-glow', ratio);
   }
 }, {passive: true});
 </script>
