@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabyn Procot-Harmand - Photographe</title>
+  <title>Gabyn Procot-Harmand - Photographe Sportif à Troyes</title>
   <meta name="description" content="Portfolio de Gabyn Procot-Harmand, photographe à Troyes spécialisé dans le sport, le culinaire et l'émotion.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,8 +41,8 @@
 
   <ul class="nav-menu" id="navMenu">
     <li><a href="#hero" class="nav-link">Accueil</a></li>
+        <li><a href="#about" class="nav-link">À propos</a></li>
     <li><a href="#galerie" class="nav-link">Galerie</a></li>
-    <li><a href="#about" class="nav-link">À propos</a></li>
     <li><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
 
@@ -54,8 +54,8 @@
 <div class="mobile-overlay" id="mobileOverlay">
   <ul class="mobile-menu">
     <li><a href="#hero"    class="mobile-link" data-num="01">Accueil</a></li>
+    <li><a href="#about"   class="mobile-link" data-num="03">À propos</a></li>    
     <li><a href="#galerie" class="mobile-link" data-num="02">Galerie</a></li>
-    <li><a href="#about"   class="mobile-link" data-num="03">À propos</a></li>
     <li><a href="#contact" class="mobile-link" data-num="04">Contact</a></li>
   </ul>
 </div>
@@ -77,6 +77,55 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="#contact" class="btn-ghost">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+    <section id="about" class="section-about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-label">Qui suis-je</p>
+          <h2 class="section-title">À <em>propos</em></h2>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-stats reveal">
+          <div class="about-stat glass tilt-element"><span class="stat-val">18</span><span class="stat-lbl">ans</span></div>
+          <div class="about-stat glass tilt-element"><span class="stat-val">1A</span><span class="stat-lbl">BUT MMI</span></div>
+          <div class="about-stat glass tilt-element"><span class="stat-val">TRY</span><span class="stat-lbl">Troyes</span></div>
+        </div>
+
+        <div class="about-text-block reveal reveal-delay-1">
+          <p class="about-text">Je m'appelle Gabyn Procot-Harmand, j'ai 18 ans et je suis étudiant en première année de BUT Métiers du Multimédia et de l'Internet à l'IUT de Troyes.</p>
+          <p class="about-text">Mon aventure avec la photographie a commencé par un voyage familial près d'un lac en France et ne s'est jamais arrêtée depuis. Au fil de mes expériences, qu'il s'agisse de photos de rugby, cyclo-cross, cyclisme, mécanique, culinaires, de mariage ou encore de cv, j'ai développé un regard qui me ressemble : attentif aux détails et à la mise en évidence de l'émotion humaine.</p>
+          <p class="about-text">Grâce au BUT MMI, je développe mes compétences en design graphique, développement web et communication afin de répondre au mieux à vos besoins !</p>
+          <p class="about-text">Passionné par l'univers des Grands Prix, mon ambition est de lier mon expertise créative au monde de la compétition de haut niveau en devenant photographe et community manager pour un pilote de MotoGP.</p>
+
+          <div class="skills-list">
+            <span class="skill-tag">Photographie</span>
+            <span class="skill-tag">Lightroom</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">Vidéo</span>
+          </div>
+          
+          <div class="about-actions reveal reveal-delay-2" style="margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.8rem; align-items: flex-start;">
+            <a href="assets/cv_gabyn_procotharmand.pdf" class="btn-primary" download>
+              Télécharger mon CV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+            </a>
+            
+            <div class="about-socials" style="display: flex; gap: 1.5rem; align-items: center;">
+              <span style="font-family: var(--font); font-size: .7rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--red);">Réseaux //</span>
+              <a href="https://www.instagram.com/gabyn_procotharmand" target="_blank" rel="noopener" class="speed-link">Instagram</a>
+              <a href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener" class="speed-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -193,55 +242,6 @@
     <button class="lightbox-next"  id="lightboxNext" aria-label="Image suivante">&#x203A;</button>
     <img src="" alt="" id="lightboxImg">
   </div>
-
-  <section id="about" class="section-about">
-    <div class="section-inner">
-      <div class="section-header reveal">
-        <div>
-          <p class="section-label">Qui suis-je</p>
-          <h2 class="section-title">À <em>propos</em></h2>
-        </div>
-      </div>
-
-      <div class="about-layout">
-        <div class="about-stats reveal">
-          <div class="about-stat glass tilt-element"><span class="stat-val">18</span><span class="stat-lbl">ans</span></div>
-          <div class="about-stat glass tilt-element"><span class="stat-val">1A</span><span class="stat-lbl">BUT MMI</span></div>
-          <div class="about-stat glass tilt-element"><span class="stat-val">TRY</span><span class="stat-lbl">Troyes</span></div>
-        </div>
-
-        <div class="about-text-block reveal reveal-delay-1">
-          <p class="about-text">Je m'appelle Gabyn Procot-Harmand, j'ai 18 ans et je suis étudiant en première année de BUT Métiers du Multimédia et de l'Internet à l'IUT de Troyes.</p>
-          <p class="about-text">Mon aventure avec la photographie a commencé par un voyage familial près d'un lac en France et ne s'est jamais arrêtée depuis. Au fil de mes expériences, qu'il s'agisse de photos de rugby, cyclo-cross, cyclisme, mécanique, culinaires, de mariage ou encore de cv, j'ai développé un regard qui me ressemble : attentif aux détails et à la mise en évidence de l'émotion humaine.</p>
-          <p class="about-text">Grâce au BUT MMI, je développe mes compétences en design graphique, développement web et communication afin de répondre au mieux à vos besoins !</p>
-          <p class="about-text">Passionné par l'univers des Grands Prix, mon ambition est de lier mon expertise créative au monde de la compétition de haut niveau en devenant photographe et community manager pour un pilote de MotoGP.</p>
-
-          <div class="skills-list">
-            <span class="skill-tag">Photographie</span>
-            <span class="skill-tag">Lightroom</span>
-            <span class="skill-tag">Photoshop</span>
-            <span class="skill-tag">HTML / CSS</span>
-            <span class="skill-tag">Vidéo</span>
-          </div>
-          
-          <div class="about-actions reveal reveal-delay-2" style="margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.8rem; align-items: flex-start;">
-            <a href="assets/cv_gabyn_procotharmand.pdf" class="btn-primary" download>
-              Télécharger mon CV
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-            </a>
-            
-            <div class="about-socials" style="display: flex; gap: 1.5rem; align-items: center;">
-              <span style="font-family: var(--font); font-size: .7rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--red);">Réseaux //</span>
-              <a href="https://www.instagram.com/gabyn_procotharmand" target="_blank" rel="noopener" class="speed-link">Instagram</a>
-              <a href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener" class="speed-link">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section id="contact" class="section-contact">
     <div class="section-inner">
