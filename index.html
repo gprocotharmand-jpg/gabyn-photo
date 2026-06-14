@@ -3,60 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabyn Procot-Harmand - Photographe Sportif à Troyes</title>
+  <title>Gabyn Procot-Harmand - Photographe</title>
   <meta name="description" content="Portfolio de Gabyn Procot-Harmand, photographe à Troyes spécialisé dans le sport, le culinaire et l'émotion.">
   
+  <link rel="icon" href="assests/favicon_blanc_gphoto.png" type="image/png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700&family=Barlow:wght@300;400;500&family=Bebas+Neue&display=swap">  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Kumbh+Sans:wght@300;400;500&display=swap">  
 
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css" media="all">
-  
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap">
-    <link rel="stylesheet" href="css/style.css">
-  </noscript>
-
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 <body class="loading">
 
 <div id="motogp-loader">
   <div class="loader-content">
-    <div class="loader-brand">GABYN<span>.PH</span></div>
-    <div class="loader-counter"><span id="load-percentage">0</span>%</div>
-    <div class="loader-bar-container">
-      <div id="loader-progress-bar"></div>
+    <div class="loader-logo-container">
+      <img src="assests/favicon_blanc_gphoto.png" class="loader-logo-base" alt="Logo">
+      <div class="loader-logo-fill" id="loader-fill">
+        <img src="assests/favicon_blanc_gphoto.png" alt="Logo">
+      </div>
     </div>
+    <div class="loader-counter"><span id="load-percentage">0</span>%</div>
   </div>
 </div>
 
 <div id="scrollProgress"></div>
 
 <nav id="navbar">
-  <a href="#hero" class="logo" aria-label="Retour en haut">Gabyn<span class="logo-dot">.ph</span></a>
+  <a href="#hero" class="logo" aria-label="Retour en haut">
+    <img src="assests/favicon_blanc_gphoto.png" alt="Logo" class="nav-logo-img">
+  </a>
 
   <ul class="nav-menu" id="navMenu">
     <li><a href="#hero" class="nav-link">Accueil</a></li>
-        <li><a href="#about" class="nav-link">À propos</a></li>
     <li><a href="#galerie" class="nav-link">Galerie</a></li>
+    <li><a href="#about" class="nav-link">À propos</a></li>
     <li><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
 
-  <button class="burger" id="burger" aria-label="Ouvrir le menu de navigation mobile">
+  <button class="burger" id="burger" aria-label="Ouvrir le menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
 <div class="mobile-overlay" id="mobileOverlay">
   <ul class="mobile-menu">
-    <li><a href="#hero"    class="mobile-link" data-num="01">Accueil</a></li>
-    <li><a href="#about"   class="mobile-link" data-num="03">À propos</a></li>    
-    <li><a href="#galerie" class="mobile-link" data-num="02">Galerie</a></li>
-    <li><a href="#contact" class="mobile-link" data-num="04">Contact</a></li>
+    <li><a href="#hero"    class="mobile-link">Accueil</a></li>
+    <li><a href="#galerie" class="mobile-link">Galerie</a></li>
+    <li><a href="#about"   class="mobile-link">À propos</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
   </ul>
 </div>
 
@@ -66,28 +63,136 @@
     <div class="hero-bg-overlay"></div>
 
     <div class="hero-content">
-      <p class="hero-eyebrow">Photographie · Création Numérique</p>
-      <h1 class="hero-title">
-        Le sport,<br>le détail, <em>l'émotion.</em>
-      </h1>
-      <p class="hero-sub">Etudiant et photographe basé à Troyes.</p>
+      <p class="hero-eyebrow">Photographie & Création Numérique</p>
+      <img src="assests/logo_blanc_gphoto.png" alt="G.PHOTO" class="logo-hero">
+      <p class="hero-sub">Étudiant et photographe basé à Troyes.</p>
       <div class="hero-actions">
-        <a href="#galerie" class="btn-primary">
-          Voir la galerie
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+        <a href="#galerie" class="btn-primary">Explorer l'univers</a>
         <a href="#contact" class="btn-ghost">Me contacter</a>
       </div>
     </div>
   </section>
 
-    <section id="about" class="section-about">
+  <section id="galerie" class="section-galerie">
     <div class="section-inner">
       <div class="section-header reveal">
-        <div>
-          <p class="section-label">Qui suis-je</p>
-          <h2 class="section-title">À <em>propos</em></h2>
-        </div>
+        <h2 class="section-title">La <em>Sélection</em></h2>
+      </div>
+
+      <div class="gallery-filters reveal">
+        <button class="filter-btn" data-filter="rugby">Rugby</button>
+        <button class="filter-btn" data-filter="hyrox">Hyrox</button>
+        <button class="filter-btn active" data-filter="cyclo-cross">Cyclo-cross</button>
+        <button class="filter-btn" data-filter="tour-de-france">Tour de France</button>
+        <button class="filter-btn" data-filter="panadiere">La Panadière 2026</button>
+        <button class="filter-btn" data-filter="gastronomique">Gastronomique</button>
+        <button class="filter-btn" data-filter="automobile">Automobile</button>
+        <button class="filter-btn" data-filter="autres">Autres</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="autres"><img src="img/photo-01.webp" alt="" width="797" height="532" fetchpriority="high"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="automobile"><img src="img/photo-02.webp" alt="Automobile" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-03.webp" alt="Portrait" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-04.webp" alt="Divers" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-05.webp" alt="Divers" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-06.webp" alt="Divers" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-07.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-08.webp" alt="Arrivée du Tour de France 2024" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="automobile"><img src="img/photo-09.webp" alt="Voiture" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-10.webp" alt="Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-11.webp" alt="Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-12.webp" alt="Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-13.webp" alt="Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-14.webp" alt="Autre projet" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-15.webp" alt="Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-16.webp" alt="Hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-17.webp" alt="Divers" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="automobile"><img src="img/photo-18.webp" alt="Automobile" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-19.webp" alt="Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-20.webp" alt="Auto" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="gastronomique"><img src="img/photo-21.webp" alt="Gastronomie" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="autres"><img src="img/photo-22.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="panadiere"><img src="img/photo-23.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="panadiere"><img src="img/photo-24.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="panadiere"><img src="img/photo-25.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="panadiere"><img src="img/photo-26.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="panadiere"><img src="img/photo-27.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="panadiere"><img src="img/photo-28.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="panadiere"><img src="img/photo-29.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-30.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-31.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-32.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-33.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-34.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-35.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-36.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-37.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-38.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-39.webp" alt="rugby" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-40.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-41.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-42.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-43.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-44.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-45.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-46.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-47.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-48.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-49.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-50.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-51.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-52.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-53.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="hyrox"><img src="img/photo-54.webp" alt="Autre" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-55.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-56.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-57.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-58.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-59.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-60.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-61.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-62.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-63.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-64.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-65.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-66.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-67.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-68.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-69.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-70.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-71.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-72.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-73.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-74.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-75.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-76.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-77.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-78.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-79.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-80.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+        <div class="gallery-item" data-category="rugby"><img src="img/photo-81.webp" alt="" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
+      </div>
+
+<div class="gallery-load-more" id="loadMoreContainer" style="display: none; justify-content: center; margin-top: 4rem;">
+        <button id="loadMoreBtn" class="btn-ghost">Voir plus</button>
+        <button id="loadLessBtn" class="btn-ghost" style="display: none;">Voir moins</button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Aperçu de l'image">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer la galerie">&#x2715;</button>
+    <button class="lightbox-prev"  id="lightboxPrev" aria-label="Image précédente">&#x2039;</button>
+    <button class="lightbox-next"  id="lightboxNext" aria-label="Image suivante">&#x203A;</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <section id="about" class="section-about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <h2 class="section-title">À <em>propos</em></h2>
       </div>
 
       <div class="about-layout">
@@ -111,17 +216,14 @@
             <span class="skill-tag">Vidéo</span>
           </div>
           
-          <div class="about-actions reveal reveal-delay-2" style="margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.8rem; align-items: flex-start;">
+          <div class="about-actions reveal reveal-delay-2">
             <a href="assets/cv_gabyn_procotharmand.pdf" class="btn-primary" download>
               Télécharger mon CV
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
             </a>
             
-            <div class="about-socials" style="display: flex; gap: 1.5rem; align-items: center;">
-              <span style="font-family: var(--font); font-size: .7rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--red);">Réseaux //</span>
-              <a href="https://www.instagram.com/gabyn_procotharmand" target="_blank" rel="noopener" class="speed-link">Instagram</a>
+            <div class="about-socials">
+              <span class="social-label">Réseaux //</span>
+              <a href="https://www.instagram.com/gabyn.photo/" target="_blank" rel="noopener" class="speed-link">Instagram</a>
               <a href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener" class="speed-link">LinkedIn</a>
             </div>
           </div>
@@ -130,126 +232,10 @@
     </div>
   </section>
 
-  <section id="galerie" class="section-galerie">
-    <div class="section-inner">
-
-      <div class="section-header reveal">
-        <div>
-          <h2 class="section-title">La <em>Galerie</em></h2>
-        </div>
-      </div>
-
-      <div class="gallery-filters reveal">
-        <button class="filter-btn" data-filter="rugby">Rugby</button>
-        <button class="filter-btn" data-filter="hyrox">Hyrox</button>
-        <button class="filter-btn active" data-filter="cyclo-cross">Cyclo-cross</button>
-        <button class="filter-btn" data-filter="tour-de-france">Tour de France</button>
-        <button class="filter-btn" data-filter="panadiere">La Panadière 2026</button>
-        <button class="filter-btn" data-filter="gastronomique">Gastronomique</button>
-        <button class="filter-btn" data-filter="automobile">Automobile</button>
-        <button class="filter-btn" data-filter="autres">Autres</button>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item" data-category="autres"><img src="img/photo-01.webp" alt="fond d'écran" width="797" height="532" fetchpriority="high"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="automobile"><img src="img/photo-02.webp" alt="aileron avant d'une Ferrari, formule1" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-03.webp" alt="Portrait de dos d'une enfant en robe de mariage" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-04.webp" alt="Moto de Supermotard sautant en travelling" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-05.webp" alt="Gros plan d'un coulis aux fruits rouges" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-06.webp" alt="boule de disco" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-07.webp" alt="homme qui danse en soirée,  noir et blanc" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-08.webp" alt="Arrivée du Tour de France 2024" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="automobile"><img src="img/photo-09.webp" alt="volant d'une Ferrari" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-10.webp" alt="coureuse du Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-11.webp" alt="coureuse du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-12.webp" alt="coureur du Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-13.webp" alt="coureuse du Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-14.webp" alt="joueur d'échecs" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-15.webp" alt="coureur du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-16.webp" alt="Hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-17.webp" alt="DJ" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="automobile"><img src="img/photo-18.webp" alt="gros plan d'une Porsche de course" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-19.webp" alt="coureuse du Cyclo-cross" width="386" height="257" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-20.webp" alt="Kyllian Bresson en clair obscur" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="gastronomique"><img src="img/photo-21.webp" alt="photo gastronomique de fromage" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="autres"><img src="img/photo-22.webp" alt="Homme tenant un drapeau à damier" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="panadiere"><img src="img/photo-23.webp" alt="coureur" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="panadiere"><img src="img/photo-24.webp" alt="coureur" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="panadiere"><img src="img/photo-25.webp" alt="coureuse" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="panadiere"><img src="img/photo-26.webp" alt="coureur" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="panadiere"><img src="img/photo-27.webp" alt="une coureuse faisant un câlin à une autre coureuse" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="panadiere"><img src="img/photo-28.webp" alt="coureuse" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="panadiere"><img src="img/photo-29.webp" alt="photo d'une enfant se retournant pour encourager sa mère" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-30.webp" alt="coureuse du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-31.webp" alt="coureuse du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-32.webp" alt="coureuse du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-33.webp" alt="coureuse du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-34.webp" alt="coureuse du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-35.webp" alt="coureur du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-36.webp" alt="coureur du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-37.webp" alt="coureur du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-38.webp" alt="coureur du Cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-39.webp" alt="joueurs de rugby en pleine ascension" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-40.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-41.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-42.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-43.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-44.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-45.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-46.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-47.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-48.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-49.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-50.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-51.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-52.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-53.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="hyrox"><img src="img/photo-54.webp" alt="pratiquant d'hyrox" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-55.webp" alt="Final du tour de France 2024, coureurs en sprint" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-56.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-57.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-58.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-59.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-60.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-61.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-62.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-63.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-64.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-65.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-66.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-67.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-68.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-69.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-70.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="tour-de-france"><img src="img/photo-71.webp" alt="Final du tour de France 2024" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-72.webp" alt="coureuse de cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="cyclo-cross"><img src="img/photo-73.webp" alt="coureuse de cyclo-cross" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-74.webp" alt="vestiaire de rugby" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-75.webp" alt="strapping de rugby" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-76.webp" alt="gros plan ballon de rugby" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-77.webp" alt="vestiaires de rugby" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-78.webp" alt="vestiaires de rugby" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-79.webp" alt="Joueur de rugby accroupi devant la balle" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-80.webp" alt="contact entre des joueurs de rugby tentant de rattraper la balle" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-        <div class="gallery-item" data-category="rugby"><img src="img/photo-81.webp" alt="portrait d'un joueur de Rugby" width="257" height="386" loading="lazy"><div class="gallery-overlay"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="lightbox" id="lightbox" role="dialog" aria-label="Aperçu de l'image">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer la galerie">&#x2715;</button>
-    <button class="lightbox-prev"  id="lightboxPrev" aria-label="Image précédente">&#x2039;</button>
-    <button class="lightbox-next"  id="lightboxNext" aria-label="Image suivante">&#x203A;</button>
-    <img src="" alt="" id="lightboxImg">
-  </div>
-
   <section id="contact" class="section-contact">
     <div class="section-inner">
       <div class="section-header reveal">
-        <div>
-          <p class="section-label">Contact</p>
-          <h2 class="section-title">Me contacter</h2>
-        </div>
+        <h2 class="section-title">Contact</h2>
       </div>
 
       <p class="contact-intro reveal">Un projet photo, une collaboration ou simplement envie d'échanger ? Contactez-moi directement.</p>
@@ -257,7 +243,7 @@
       <div class="contact-grid reveal">
         <a class="contact-card glass tilt-element" href="mailto:g.procotharmand@gmail.com">
           <div class="contact-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
           <div class="contact-card-text">
             <span class="contact-card-label">Email</span>
@@ -267,7 +253,7 @@
 
         <a class="contact-card glass tilt-element" href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener">
           <div class="contact-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </div>
           <div class="contact-card-text">
             <span class="contact-card-label">LinkedIn</span>
@@ -275,15 +261,14 @@
           </div>
         </a>
 
-        <div class="contact-card glass" style="padding: 0; overflow: hidden; min-height: 440px; border-color: var(--red-dim); display: flex; justify-content: center; align-items: center;">
+        <div class="contact-card glass contact-ig">
           <iframe title="Instagram"
             src="https://www.instagram.com/p/DYg4Q1MAGXE/embed/" 
             width="100%" 
             height="100%" 
             frameborder="0" 
             scrolling="no" 
-            allowtransparency="true"
-            style="border:none; overflow:hidden; border-radius: var(--radius-sharp); min-height: 440px;">
+            allowtransparency="true">
           </iframe>
         </div>
       </div>
@@ -292,18 +277,24 @@
 </main>
 
 <footer>
-  <p class="footer-copy">© 2026 Gabyn Procot-Harmand</p>
-  <a href="#hero" class="footer-logo">Gabyn<span>.ph</span></a>
-  <div class="footer-socials">
-    <a href="https://www.instagram.com/gabyn_procotharmand" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2026 Gabyn Procot-Harmand</p>
+    <a href="#hero" class="footer-logo">
+      <img src="assests/favicon_blanc_gphoto.png" alt="Logo" class="footer-logo-img">
+    </a>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/gabyn.photo/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/gabyn-procot-harmand" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
 </footer>
 
 <script>
+// ── GESTION DU LOADER ET DE LA GALERIE ──
 window.addEventListener('DOMContentLoaded', () => {
+  // Loader
   const percentEl = document.getElementById('load-percentage');
-  const barEl = document.getElementById('loader-progress-bar');
+  const fillEl = document.getElementById('loader-fill'); 
   const loader = document.getElementById('motogp-loader');
   
   let count = 0;
@@ -312,17 +303,137 @@ window.addEventListener('DOMContentLoaded', () => {
     if(count >= 100) {
       count = 100;
       clearInterval(interval);
-      
       setTimeout(() => {
         loader.classList.add('fade-out');
         document.body.classList.remove('loading');
-      }, 300);
+      }, 400);
     }
     percentEl.textContent = count;
-    barEl.style.width = count + '%';
+    fillEl.style.width = count + '%';
   }, 30);
+
+  // Initialisation Galerie
+  initGallery();
 });
 
+// ── LOGIQUE GALERIE ET "VOIR PLUS / VOIR MOINS" ──
+const galleryGrid = document.querySelector('.gallery-grid');
+const items = document.querySelectorAll('.gallery-item');
+const filters = document.querySelectorAll('.filter-btn');
+const loadMoreContainer = document.getElementById('loadMoreContainer');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const loadLessBtn = document.getElementById('loadLessBtn'); // Nouveau bouton
+
+let visibleItems = [];
+let currentFilter = 'cyclo-cross'; 
+const ITEMS_PER_PAGE = 4; // 4 photos affichées par défaut
+
+function initGallery() {
+  applyFilter(currentFilter);
+}
+
+function applyFilter(filterValue) {
+  currentFilter = filterValue;
+  let matchCount = 0;
+  let activeIndex = 0;
+
+  galleryGrid.classList.remove('grid-animate-in');
+
+  items.forEach(item => {
+    const categories = item.getAttribute('data-category').split(' ');
+    
+    if (categories.includes(filterValue)) {
+      matchCount++;
+      if (matchCount > ITEMS_PER_PAGE) {
+        // Cacher les éléments excédentaires
+        item.classList.add('hidden-load-more', 'hidden-anim');
+        item.style.display = 'none';
+      } else {
+        // Afficher les premiers
+        item.classList.remove('hidden-load-more', 'hidden-anim');
+        item.style.display = 'block';
+        item.style.setProperty('--item-idx', activeIndex++);
+      }
+    } else {
+      // Cacher les éléments des autres catégories
+      item.classList.add('hidden-anim');
+      setTimeout(() => {
+        if (item.classList.contains('hidden-anim')) item.style.display = 'none';
+      }, 400);
+    }
+  });
+
+  // Gérer l'affichage des boutons
+  if (loadMoreContainer) {
+    if (matchCount > ITEMS_PER_PAGE) {
+      loadMoreContainer.style.display = 'flex';
+      loadMoreBtn.style.display = 'inline-flex';
+      loadLessBtn.style.display = 'none';
+    } else {
+      loadMoreContainer.style.display = 'none';
+    }
+  }
+
+  setTimeout(() => {
+    galleryGrid.classList.add('grid-animate-in');
+    updateVisibleItems();
+  }, 50);
+}
+
+function updateVisibleItems() {
+  visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden-anim') && item.style.display !== 'none');
+}
+
+// Gestion des clics sur les filtres
+filters.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filters.forEach(f => f.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilter(btn.getAttribute('data-filter'));
+  });
+});
+
+// Gestion du clic sur "Voir plus"
+if (loadMoreBtn) {
+  loadMoreBtn.addEventListener('click', () => {
+    let activeIndex = ITEMS_PER_PAGE;
+    
+    items.forEach(item => {
+      const categories = item.getAttribute('data-category').split(' ');
+      
+      if (categories.includes(currentFilter) && item.classList.contains('hidden-load-more')) {
+        item.style.display = 'block';
+        
+        setTimeout(() => {
+          item.classList.remove('hidden-load-more', 'hidden-anim');
+          item.style.setProperty('--item-idx', activeIndex++);
+        }, 10);
+      }
+    });
+    
+    // Inverser les boutons
+    loadMoreBtn.style.display = 'none';
+    loadLessBtn.style.display = 'inline-flex';
+    
+    setTimeout(updateVisibleItems, 500);
+  });
+}
+
+// Gestion du clic sur "Voir moins"
+if (loadLessBtn) {
+  loadLessBtn.addEventListener('click', () => {
+    // Réappliquer le filtre remet automatiquement le compteur à 4 images
+    applyFilter(currentFilter);
+    
+    // Ramener l'utilisateur en haut de la galerie pour le confort visuel
+    const gallerySection = document.getElementById('galerie');
+    if (gallerySection) {
+      gallerySection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+
+// ── NAVIGATION & SCROLL ──
 const navbar = document.getElementById('navbar');
 const scrollProgress = document.getElementById('scrollProgress');
 
@@ -338,21 +449,12 @@ window.addEventListener('scroll', () => {
 const heroBg = document.getElementById('heroBg');
 window.addEventListener('scroll', () => {
   if (heroBg) {
-    let offset = window.scrollY * 0.4;
+    let offset = window.scrollY * 0.3;
     heroBg.style.transform = `scale(1.05) translateY(${offset}px)`;
   }
 }, {passive: true});
 
-const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', () => {
-  const y = window.scrollY + 100;
-  sections.forEach(s => {
-    if (y >= s.offsetTop && y < s.offsetTop + s.offsetHeight)
-      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#'+s.id));
-  });
-}, {passive:true});
-
+// ── MENU MOBILE ──
 const burger = document.getElementById('burger');
 const overlay = document.getElementById('mobileOverlay');
 burger.addEventListener('click', () => {
@@ -364,6 +466,7 @@ document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click
   burger.classList.remove('open'); overlay.classList.remove('open'); document.body.classList.remove('no-scroll');
 }));
 
+// Défilement doux
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const t = document.querySelector(a.getAttribute('href'));
@@ -371,6 +474,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+// ── ANIMATIONS AU SCROLL (REVEAL) ──
 const revObs = new IntersectionObserver(entries => {
   entries.forEach(e => { 
     if(e.isIntersecting) e.target.classList.add('visible'); 
@@ -382,105 +486,23 @@ document.querySelectorAll('.reveal').forEach(el => {
   }
 });
 
-const galleryGrid = document.querySelector('.gallery-grid');
-const items = document.querySelectorAll('.gallery-item');
-
 const galleryObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       galleryGrid.classList.add('grid-animate-in');
-      let idx = 0;
-      items.forEach(item => {
-        if (!item.classList.contains('hidden-anim') && item.style.display !== 'none') {
-          item.style.setProperty('--item-idx', idx);
-          idx++;
-        }
-      });
       galleryObserver.unobserve(entry.target);
     }
   });
 }, { threshold: 0.05 });
-
 if (galleryGrid) galleryObserver.observe(galleryGrid);
 
-const filters = document.querySelectorAll('.filter-btn');
+// ── LIGHTBOX ──
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lightboxImg');
 const lbClose = document.getElementById('lightboxClose');
 const lbPrev = document.getElementById('lightboxPrev');
 const lbNext = document.getElementById('lightboxNext');
-
-let visibleItems = Array.from(items); 
 let lbIndex = 0;
-
-function filterGallery(filterValue) {
-  let activeIndex = 0;
-  galleryGrid.classList.remove('grid-animate-in');
-  
-  items.forEach((item) => {
-    const categories = item.getAttribute('data-category').split(' ');
-    
-    if (categories.includes(filterValue)) {
-      item.style.display = 'block';
-      item.classList.remove('hidden-anim');
-      item.style.setProperty('--item-idx', activeIndex);
-      activeIndex++;
-    } else {
-      item.classList.add('hidden-anim');
-      setTimeout(() => {
-        if(item.classList.contains('hidden-anim')) item.style.display = 'none';
-      }, 400); 
-    }
-  });
-  
-  setTimeout(() => {
-    galleryGrid.classList.add('grid-animate-in');
-    visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden-anim'));
-  }, 50);
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  let activeIdx = 0;
-  items.forEach(item => {
-    const categories = item.getAttribute('data-category').split(' ');
-    if (!categories.includes('cyclo-cross')) {
-      item.classList.add('hidden-anim');
-      item.style.display = 'none';
-    } else {
-      item.style.display = 'block';
-      item.classList.remove('hidden-anim');
-      item.style.setProperty('--item-idx', activeIdx);
-      activeIdx++;
-    }
-  });
-  visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden-anim'));
-});
-
-filters.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filters.forEach(f => f.classList.remove('active'));
-    btn.classList.add('active');
-    const filterValue = btn.getAttribute('data-filter');
-    filterGallery(filterValue);
-  });
-});
-
-if (window.innerWidth > 900) {
-  items.forEach(item => {
-    const img = item.querySelector('img');
-    item.addEventListener('mousemove', (e) => {
-      const rect = item.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const moveX = ((x / rect.width) - 0.5) * 16;
-      const moveY = ((y / rect.height) - 0.5) * 16;
-      img.style.transform = `scale(1.1) translate(${moveX}px, ${moveY}px)`;
-    });
-    item.addEventListener('mouseleave', () => {
-      img.style.transform = 'scale(1) translate(0, 0)';
-    });
-  });
-}
 
 function openLb(i) {
   lbIndex = i; updateLb();
@@ -518,6 +540,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight' && lbIndex < visibleItems.length - 1) { lbIndex++; updateLb(); }
 });
 
+// ── EFFET TILT (SURVOL 3D) ──
 const tiltElements = document.querySelectorAll('.tilt-element');
 if (window.innerWidth > 900) {
   tiltElements.forEach(el => {
@@ -527,29 +550,15 @@ if (window.innerWidth > 900) {
       const y = e.clientY - rect.top; 
       const xc = rect.width / 2;
       const yc = rect.height / 2;
-      const angleX = (yc - y) / yc * 12;
-      const angleY = (x - xc) / xc * 12;
-      const hasSkew = el.classList.contains('about-stat') ? 'skewX(-6deg)' : '';
-      el.style.transform = `perspective(600px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.03) ${hasSkew}`;
+      const angleX = (yc - y) / yc * 8;
+      const angleY = (x - xc) / xc * 8;
+      el.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.02)`;
     });
     el.addEventListener('mouseleave', () => {
-      const hasSkew = el.classList.contains('about-stat') ? 'skewX(-6deg)' : '';
-      el.style.transform = `perspective(600px) rotateX(0deg) rotateY(0deg) scale(1) ${hasSkew}`;
+      el.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)`;
     });
   });
 }
-
-const contactSection = document.getElementById('contact');
-window.addEventListener('scroll', () => {
-  if (!contactSection) return;
-  const rect = contactSection.getBoundingClientRect();
-  const winH = window.innerHeight;
-  if (rect.top < winH && rect.bottom > 0) {
-    let ratio = 1 - (rect.top / winH);
-    ratio = Math.min(Math.max(ratio, 0), 1);
-    contactSection.style.setProperty('--contact-glow', ratio);
-  }
-}, {passive: true});
 </script>
 </body>
 </html>
